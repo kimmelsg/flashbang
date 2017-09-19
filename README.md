@@ -1,10 +1,51 @@
 # flashbang
-a set of small react utilities that make building your app so fast, your boss will be more disoriented and in shock than a flashbang going off ;)
 
-- toggle using props on the items that are children
+[![CircleCI](https://circleci.com/gh/kimmelsg/flashbang.svg?style=svg)](https://circleci.com/gh/kimmelsg/flashbang)
 
-- async action disables button and places loading spinner on it
+- [QueryState](#Query-State)
+- [Toggle](#Toggle)
 
-- global error notification display on request fails or anything
 
-- 
+## Query State
+
+Stores state in the url. Useful for search pages. Must be rendered inside react-router v4.
+
+[See tests](/tests/query-state.js)
+
+```js
+import { QueryState } from 'flashbang'
+
+const example = ({ state, setState }) => (
+  <div>
+    <input
+      value={state.test}
+      onChange={e => setState({ test: e.target.value })}
+    />
+  </div>
+);
+
+export default QueryState(example);
+...
+
+<Toggle>
+  <div toggle>Swap</div>
+
+  <div onn>This is shown when toggled</div>
+  <div off>This is shown when not toggled</div>
+</Toggle>
+```
+
+
+## Toggle
+
+```js
+import { Toggle } from 'flashbang'
+...
+
+<Toggle>
+  <div toggle>Swap</div>
+
+  <div onn>This is shown when toggled</div>
+  <div off>This is shown when not toggled</div>
+</Toggle>
+```
