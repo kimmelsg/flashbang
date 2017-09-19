@@ -7,6 +7,11 @@
 - [Toggle](#toggle)
 - [Async Action](#async-action)
 
+## Install
+
+```js
+npm install flashbang
+```
 
 ## Query State
 
