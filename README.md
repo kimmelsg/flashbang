@@ -5,6 +5,7 @@
 
 - [QueryState](#query-state)
 - [Toggle](#toggle)
+- [Async Action](#async-action)
 
 
 ## Query State
@@ -32,6 +33,8 @@ export default QueryState(example);
 
 ## Toggle
 
+**Coming Soon**
+
 ```js
 import { Toggle } from 'flashbang'
 
@@ -41,4 +44,20 @@ import { Toggle } from 'flashbang'
   <div on>This is shown when toggled</div>
   <div off>This is shown when not toggled</div>
 </Toggle>
+```
+
+
+## Async Action
+
+**Coming Soon**
+
+Changes text depending on promise status. Blocks onClick / onPress if a promise is in the middle of resolving, or just finished.
+
+```js
+import { AsyncAction } from 'flashbang'
+
+<AsyncAction
+  values={['Create', 'Creating...', 'Created']}
+  render={value => <div onPress={() => this.create()}>{value}</div>}
+/>
 ```
