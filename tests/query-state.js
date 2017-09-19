@@ -9,12 +9,6 @@ const Example = QueryState(({ state, setState }) => (
       value={state.test}
       onChange={e => setState({ test: e.target.value })}
     />
-
-    <input
-      value={state.another}
-      onChange={e => setState({ another: e.target.value })}
-    />
-    <div>{state.another}</div>
   </div>
 ));
 
