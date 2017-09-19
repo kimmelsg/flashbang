@@ -27,14 +27,6 @@ const example = ({ state, setState }) => (
 );
 
 export default QueryState(example);
-...
-
-<Toggle>
-  <div toggle>Swap</div>
-
-  <div onn>This is shown when toggled</div>
-  <div off>This is shown when not toggled</div>
-</Toggle>
 ```
 
 
@@ -42,12 +34,11 @@ export default QueryState(example);
 
 ```js
 import { Toggle } from 'flashbang'
-...
 
 <Toggle>
   <div toggle>Swap</div>
 
-  <div onn>This is shown when toggled</div>
+  <div on>This is shown when toggled</div>
   <div off>This is shown when not toggled</div>
 </Toggle>
 ```
