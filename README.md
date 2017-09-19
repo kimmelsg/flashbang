@@ -17,8 +17,9 @@ npm install flashbang
 
 Stores state in the url. Useful for search pages. Must be rendered inside react-router v4.
 
-- [See tests](/tests/query-state.js)
-- [See Example in CRA](/example/src/example/query-state.js)
+- [source](/src/query-state.js)
+- [tests](/tests/query-state.js)
+- [example](/example/src/example/query-state.js)
 
 ```js
 import { QueryState } from 'flashbang'
