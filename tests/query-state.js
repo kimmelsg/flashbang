@@ -53,12 +53,14 @@ test('should update url state', done => {
     .first()
     .simulate('change', { target: { value: 'testing & ampersand!' } });
 
-  setTimeout(() => false, 400);
-
-  expect(
-    wrapper
-      .find('input')
-      .first()
-      .props().value
-  ).toEqual('testing & ampersand!');
+  setTimeout(
+    () =>
+      expect(
+        wrapper
+          .find('input')
+          .first()
+          .props().value
+      ).toEqual('testing & ampersand!'),
+    400
+  );
 });

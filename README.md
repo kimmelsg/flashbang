@@ -39,7 +39,11 @@ export default QueryState(example);
 
 ## Toggle
 
-**Coming Soon**
+Toggle the display of data with three simple props!
+
+- [source](/src/toggle.js)
+- [tests](/tests/toggle.js)
+- [example](/example/src/example/toggle.js)
 
 ```js
 import { Toggle } from 'flashbang'
