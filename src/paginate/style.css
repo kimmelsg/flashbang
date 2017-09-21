@@ -1,0 +1,39 @@
+.flashbang-p {
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.flashbang-p ul {
+  list-style: none;
+}
+
+.flashbang-p__li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.flashbang-p__link {
+  text-decoration: none;
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 25px;
+  border-radius: 2px;
+  border: 1px solid #f59a22;
+  background-color: #fff;
+  color: #f59a22;
+}
+
+.flashbang-p__disabled {
+  border-color: #91989d;
+  color: #91989d;
+}
+
+.flashbang-p__is-active {
+  cursor: default;
+  background-color: #f59a22;
+  color: #fff;
+}

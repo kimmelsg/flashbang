@@ -5,6 +5,7 @@
 
 - [QueryState](#query-state)
 - [Toggle](#toggle)
+- [Paginate](#paginate)
 - [Async Action](#async-action)
 
 ## Install
@@ -54,6 +55,30 @@ import { Toggle } from 'flashbang'
   <div on>This is shown when toggled</div>
   <div off>This is shown when not toggled</div>
 </Toggle>
+```
+
+
+## Paginate
+
+Display 5 page numbers in either direction with next and previous buttons
+
+- [source](/src/paginate)
+- [tests](/tests/paginate.js)
+- [example](/example/src/example/paginate.js)
+
+Import the default css, or pass your own class names and use your own css!
+
+```js
+import { Paginate } from 'flashbang';
+import 'flashbang/dist/paginate/style.css';
+
+export default () => (
+  <Paginate
+    page={5}
+    pages={25}
+    createURL={page => `?page=${page}`}
+  />
+);
 ```
 
 
