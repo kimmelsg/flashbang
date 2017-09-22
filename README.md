@@ -84,15 +84,19 @@ export default () => (
 
 ## Async Action
 
-**Coming Soon**
+Changes text depending on promise status. Blocks onClick if a promise is in the middle of resolving, or finished.
 
-Changes text depending on promise status. Blocks onClick / onPress if a promise is in the middle of resolving, or just finished.
+- [source](/src/async-action)
+- [tests](/tests/async-action.js)
+- [example](/example/src/example/async-action.js)
 
 ```js
 import { AsyncAction } from 'flashbang'
 
 <AsyncAction
-  values={['Create', 'Creating...', 'Created']}
-  render={value => <div onPress={() => this.create()}>{value}</div>}
+  onClick={() => new Promise(resolve => setTimeout(resolve, 100))}
+  before={<div>Create</div>}
+  during={<div>Creating...</div>}
+  after={<span>Created!</span>}
 />
 ```
