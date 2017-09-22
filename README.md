@@ -86,7 +86,7 @@ export default () => (
 
 Changes text depending on promise status. Blocks onClick if a promise is in the middle of resolving, or finished.
 
-- [source](/src/async-action)
+- [source](/src/async-action.js)
 - [tests](/tests/async-action.js)
 - [example](/example/src/example/async-action.js)
 
