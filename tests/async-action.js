@@ -6,7 +6,7 @@ const wait = time => new Promise(resolve => setTimeout(resolve, time));
 
 const Example = () => (
   <AsyncAction
-    onClick={() => new Promise(resolve => setTimeout(resolve, 10))}
+    onClick={() => new Promise(resolve => setTimeout(resolve, 100))}
     before={<div>Create</div>}
     during={<div>Creating...</div>}
     after={<span>Created!</span>}
@@ -24,9 +24,9 @@ test('should render loading and after on click', async () => {
 
   wrapper.find('div').simulate('click');
 
-  await wait(5);
+  await wait(20);
   expect(wrapper.html()).toEqual('<div>Creating...</div>');
 
-  await wait(5);
+  await wait(100);
   expect(wrapper.html()).toEqual('<span>Created!</span>');
 });
