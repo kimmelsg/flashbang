@@ -100,3 +100,7 @@ import { AsyncAction } from 'flashbang'
   after={<span>Created!</span>}
 />
 ```
+
+## Examples
+
+The `examples` directory is a `create-react-app` module, so you can `npm start` or `npm run build` to see the demos live.
