@@ -1,0 +1,11 @@
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
