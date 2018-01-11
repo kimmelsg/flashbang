@@ -26,6 +26,7 @@ export default component =>
 
       render() {
         return React.createElement(component, {
+          ...this.props,
           state: { ...this.state },
           setState: this.update,
         });

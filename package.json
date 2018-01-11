@@ -1,6 +1,6 @@
 {
   "name": "flashbang",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "small set of awesome react utilities",
   "main": "dist/index.js",
   "scripts": {
